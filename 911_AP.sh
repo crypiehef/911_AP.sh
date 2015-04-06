@@ -1,12 +1,13 @@
 #!/bin/bash
-# updated nov 25th
+# updated mar 4th 2015
 # script coded by em3rgency
-# 911_AP version 1.1
+# script updated by crypiehef to work with Kali Linux
+# 911_AP version 1.1 (kali)
 # xwininfo -id $(xprop -root | awk '/_NET_ACTIVE_WINDOW\(WINDOW\)/{print $NF}')
 # This script creates a FAKE Access Points and loads the tools to enumerate connected clients. And it actually works!
 # Also includes workin ARP poisoning features.
-# Tested and working on BT5r3, Needs to have version 1.3 of dhcp3-server to work correctly
-# DOES NOT WORK with ISC-dhcp-server (YET!)
+# Tested and working on kali Linux, Needs to have version 1.3 of dhcp3-server to work correctly
+# Works with ISC DHCP Server now. Readme needs to be updated with ISC config instructions.
 
 #DEFINED COLOR SETTINGS
 RED=$(tput setaf 1 && tput bold)
